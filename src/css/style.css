@@ -1,15 +1,17 @@
 body {
   background: #2b0845;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
   line-height: 23px;
+  color: #fff;
 }
 
 .container-fluid {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25)
 }
+
 .navbar a {
   color: #ffffff;
 }
@@ -18,7 +20,7 @@ body {
   line-height: 23px;
 }
 .navbar-nav .nav-item a:hover {
-  background: linear-gradient(to left, #fa8c02, #ffe10d);
+  background: linear-gradient(to left,#ffe10d,  #fa8c02);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -41,6 +43,11 @@ body {
     rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
+.nav-bar-header{
+  position: relative;
+  z-index: 1;
+  font-family: 'Orbitron', sans-serif;
+}
 .dropdown-menu {
   background: transparent;
   width: 153px;
@@ -59,7 +66,7 @@ body {
   position: relative;
 }
 .dropdown-menu li {
-  border-radius: 4px;
+  border-radius: 5px;
   overflow: hidden;
   background: transparent;
 }
@@ -73,12 +80,175 @@ body {
   border-image: linear-gradient(to left, #ffe10d, #fa8c02) 1 100%;
   border-image-slice: 1;
   border-width: 2px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 .navbar {
-  height: 100px;
+  height: 64px;
 }
-
-.background-top {
-  background: url('..\image\expo-now-01.jpg');
+.container-xxl.body-content {
+  background: url('../image/expo-now-01.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  top: -64px;
+  z-index: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.body-content {
+  height: 100vh;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 27px;
+}
+.body-content .content {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-top: calc(50% - 200px);
+}
+.body-content .content p{
+  margin-bottom: 10px;
+}
+.body-content .content .btn-buy-ticket::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-image: linear-gradient(to left, #ffe10d, #fa8c02) 1 100%;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-style: solid;
+  top: 0;
+  left: 0;
+}
+.body-content .content .btn-buy-ticket {
+  position: relative;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  overflow: hidden;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 29px;
+}
+.time-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1030px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+.time-info h3.title {
+  background: linear-gradient(to left,#ffe10d,  #fa8c02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 44px;
+  font-weight: 900;
+}
+.time-info .table {
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  padding: 40px 105px;
+  color: #fff;
+}
+.time-info .table::before  {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-image: linear-gradient(to left, #ffe10d, #fa8c02) 1 100%;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-style: solid;
+  top: 0;
+  left: 0;
+}
+.time-info .table .row {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+.time-info .table .row::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, #ffe10d, #fa8c02);
+  bottom: 0;
+}
+.time-info .table .row:last-child:before{
+  content: none;
+}
+.time-info .table .col-4 {
+  text-align: center;
+}
+.time-info .table .title-header .col-4{
+  background: linear-gradient(to left,#ffe10d,  #fa8c02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.time-info .table .title-content .col-4 {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+}
+.time-info .desc {
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+.time-info .desc .text {
+  
+  margin-bottom: 0;
+}
+.time-info .desc .text span {
+  margin-right: 10px;
+}
+.time-info .desc .btn-here {
+  color: #460D6E;
+  background: linear-gradient(to left,#ffe10d,  #fa8c02);
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+}
+.infor-ticket {
+  margin-top: 80px;
+  width: 1030px;
+}
+.infor-ticket .content .title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+.infor-ticket .content .text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+.infor-ticket .content .desc {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
 }
