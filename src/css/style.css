@@ -1,0 +1,84 @@
+body {
+  background: #2b0845;
+  font-family: 'Orbitron', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.container-fluid {
+  background: rgba(0, 0, 0, 0.2);
+}
+.navbar a {
+  color: #ffffff;
+}
+.nav .nav-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+.navbar-nav .nav-item a:hover {
+  background: linear-gradient(to left, #fa8c02, #ffe10d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-link.dropdown-toggle:after {
+  content: none;
+}
+.dropdown-menu:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(
+      180deg,
+      rgba(43, 8, 69, 0) 0%,
+      rgba(250, 140, 2, 0.5) 100%
+    ),
+    rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+.dropdown-menu {
+  background: transparent;
+  width: 153px;
+  padding: 0px;
+  border-radius: 5px;
+  margin-top: 0 !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+}
+
+.dropdown-menu li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+.dropdown-menu li {
+  position: relative;
+}
+.dropdown-menu li {
+  border-radius: 4px;
+  overflow: hidden;
+  background: transparent;
+}
+.dropdown-menu li a {
+  min-height: 32px;
+}
+.dropdown-menu li a:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid;
+  border-image: linear-gradient(to left, #ffe10d, #fa8c02) 1 100%;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-radius: 4px;
+}
+.navbar {
+  height: 100px;
+}
+
+.background-top {
+  background: url('..\image\expo-now-01.jpg');
+}
