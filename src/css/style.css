@@ -388,7 +388,7 @@ body {
   left: 0;
 }
 .events.container-xxl .container-content {
-  width: 1240px;
+  max-width: 1240px;
   margin: 0 auto;
   position: relative;
   z-index: 11;
@@ -589,13 +589,14 @@ body {
   background-size: cover;
   background-position: center center;
   padding-top: 50px;
+  padding-bottom: 360px;
 }
 .sale-content .box-item {
   width: 1240px;
   display: flex;
   flex: 1;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
 }
@@ -633,6 +634,7 @@ body {
 .sale-content .box-item .item img {
   display: block;
   width: 100%;
+  border-radius: 5px;
 }
 .sale-content .box-item .item .item-link {
   display: inline-block;
@@ -667,4 +669,81 @@ body {
   font-size: 35px;
   line-height: 44px;
   margin-bottom: 50px;
+}
+.sale-content .actions-more {
+  text-align: center;
+}
+.sale-content .actions-more .btn-see-more {
+  padding: 10px 30px;
+  background: linear-gradient(to left, #ffe10d, #fa8c02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  text-decoration: none;
+}
+.sale-content .actions-more .btn-see-more::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-image: linear-gradient(to left, #ffe10d, #fa8c02) 1 100%;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+}
+.sale-content .actions-more .btn-see-more:hover {
+  background: linear-gradient(to left, #ffe10d, #fa8c02);
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  color: #460d6e;
+}
+
+/* page event past */
+
+.body-content-event-past.container-xxl.body-content{
+  background-image: url('../image/bg-img-event-past.jpg');
+}
+.events-past.container-xxl.events .container-content .title {
+  text-align: center;
+  background: linear-gradient(to left, #ffe10d, #fa8c02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 680px;
+  font-family: Orbitron;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 44px;
+  margin: 0 auto 20px;
+  
+}
+.events-past .container-content {
+  margin-bottom: 50px;
+}
+.events-past .container-content .content-iframe {
+  position: relative;
+  max-width: 1030px;
+  overflow: hidden;
+  padding-top: 46.80%;
+  margin: 0 auto;
+}
+
+.events-past .container-content .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
