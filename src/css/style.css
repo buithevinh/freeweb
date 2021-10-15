@@ -11,7 +11,12 @@ body {
 .container-fluid {
   background: rgba(0, 0, 0, 0.25);
 }
-
+.navbar-collapse .img-logo {
+  display: none;
+}
+.nav-home {
+  display: none;
+}
 .navbar a {
   color: #f2f2f2;
   margin-left: 10px;
@@ -1077,7 +1082,7 @@ body {
 /* star board */
 .star-board-page {
   max-width: 1240px;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 .star-board-page .box-left {
   background: rgba(0, 0, 0, 0.2);
@@ -1162,7 +1167,6 @@ body {
   line-height: 17px;
   font-weight: 600;
 }
-
 .star-board-page .box-right .box-chat .txt-date,
 .star-board-page .box-right .box-chat .text {
   color: #f2f2f2;
@@ -1258,6 +1262,9 @@ body {
 .star-board-page .box-content .text {
   margin-bottom: 10px;
   min-height: 38px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
 }
 .star-board-page .box-content img {
   display: block;
@@ -1278,10 +1285,173 @@ body {
   color: #f2f2f2;
   display: inline-block;
   margin-left: 5px;
+  font-weight: 300;
 }
 .star-board-page .box-right .box-action {
   width: 42px;
   align-content: center;
   display: flex;
   margin-right: 20px;
+}
+.star-board-page .box-right {
+  padding-left: 20px;
+}
+.star-board-page .box-right .live {
+  padding-right: 20px;
+}
+
+.star-board-page .box-right .col-4 {
+  padding-right: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.star-board-page .dropdown-menu-options {
+  background: #f1f1f1;
+  width: 225px;
+  padding: 15px;
+}
+.star-board-page .dropdown-menu-options::before {
+  content: none;
+}
+.star-board-page .dropdown-menu-options a:hover {
+  border: none;
+  background: initial;
+  color: #fa8c02;
+}
+.star-board-page .dropdown-menu-options a {
+  color: #2b0845;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 17px;
+  min-height: 17px;
+}
+.star-board-page .dropdown-menu-options .btn {
+  padding: 5px;
+  background: #2b0845;
+  color: #f2f2f2;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.star-board-page .dropdown-menu-options .btn:hover {
+  background: #2b0845;
+}
+.star-board-page .dropdown-menu-options .btn-cancel {
+  font-weight: 600;
+  margin-left: 69px;
+}
+.star-board-page .dropdown-menu-options .header {
+  margin-top: 20px;
+}
+.star-board-page .dropdown-menu-options .btn-apply {
+  margin-right: 0;
+}
+.star-board-page .dropdown-menu-options a.active {
+  color: #fa8c02;
+  background: transparent;
+  position: relative;
+}
+.star-board-page .dropdown-menu-options a.active .bi {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 24px;
+}
+.star-board-page .dropdown-menu-options li {
+  color: #2b0845;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 10px;
+}
+.star-board-page .dropdown-menu-options li.header {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+}
+.star-board-page .dropdown-menu-options li.title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  body,
+  html {
+    overflow: hidden;
+    width: 100%;
+  }
+  .nav-bar-header {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .nav-bar-header .nav-bar {
+    padding: 0;
+  }
+  .nav-bar-header .navbar-expand-lg {
+    padding-left: 0;
+    padding-right: 0;
+    height: 45px;
+  }
+  .navbar a {
+    margin: 0;
+  }
+  .navbar .img-logo img {
+    width: 24px;
+    height: 24px;
+  }
+  .nav-bar-header .navbar-toggler {
+    color: #f2f2f2;
+    box-shadow: none;
+    outline: none;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    padding: 15px;
+    background: #999;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+  .navbar-collapse::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 
+180deg, rgba(43, 8, 69, 0) 0%, rgba(250, 140, 2, 0.5) 100% ), rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+  }
+  .navbar-collapse .img-logo {
+    margin-bottom: 15px;
+  }
+  .nav-home {
+    display: block;
+  }
+  .navbar-collapse .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
+  }
+  .navbar-collapse .img-logo,
+  .navbar-collapse .img-logo img {
+    display: block;
+    width: 68px;
+    height: 68px;
+  }
+  .navbar-collapse .nav-item.dropdown ul {
+    box-shadow: none;
+  }
+  .navbar-collapse .nav-item.dropdown ul::before {
+    content: none;
+  }
 }
