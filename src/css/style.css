@@ -240,7 +240,7 @@ body {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 1.5px;
   background: linear-gradient(to left, #ffe10d, #fa8c02);
   bottom: 0;
 }
@@ -816,6 +816,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .about-package .box-item .bg-item {
@@ -1634,7 +1635,7 @@ body {
     min-height: 545px;
   }
   .body-content .content {
-    margin-top: calc(50vh - 22px);
+    margin-top: calc(50% + 60px);
   }
   .body-content .content p {
     font-size: 14px;
@@ -1881,7 +1882,7 @@ body {
     border-width: 2px;
   }
   .sale-content .actions-more {
-    margin-top: 20px;
+    margin-top: -10px;
     margin-bottom: 165px;
     text-align: left;
   }
@@ -1898,11 +1899,148 @@ body {
   .footer .icon-social a:last-child {
     margin-right: 0;
   }
+  .body-content-event-past.container-xxl.body-content {
+    min-height: 360px;
+    background-size: 100% ;
+  }
+  .events.container-xxl.bg-image_expo::before, .container-xxl.bg-image::before {
+    background-size: 100%;
+  }
+  .events-past.container-xxl.events .container-content .title {
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 64%;
+    margin-bottom: 10px;
+  }
+  .events.container-xxl.events-past.bg-image_expo{
+    padding-bottom: 165px;
+  }
+  .concert-container .time-info {
+    margin-top: -210px;
+    top: 0;
+  }
+  .container-xxl.concert-container .title {
+    margin-bottom: 10px;
+  }
+  .concert-container .time-info .table .row .col-4 a{
+    display: block;
+    padding: 2px 18px;
+    color: #828282;
+    border: 1px solid #828282;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 6px;
+  }
+  .container-xxl.concert-container {
+    padding-bottom: 20px;
+  }
+  .about-package .title, .noted-content .title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .about-package .desc {
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .about-package .box-item .bg-item {
+    height: 168px;
+  }
+  .about-package .box-item .bg-item img {
+    width: 97px;
+    min-height: 100px;
+  }
+  .about-package .box-item .item .item-link {
+    width: calc(100% - 35px);
+  }
+  .about-package {
+    margin-bottom: 0;
+  }
+  .about-package .box-item .item .item-link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .time-info .table {
+    padding: 10px;
+  }
+  .time-info .table .row::before {
+    width: calc(100% - 40px);
+    left: 22px;
+  }
+  .noted-content .note {
+    margin: 10px auto;
+  }
+  .noted-content {
+    margin-bottom: 30px;
+  }
+  .bg-homepage .content .star-profile {
+    width: 214px;
+    height: 163px;
+    left: -11px;
+    top: 28px;
+  }
+  .bg-homepage .content .star-board {
+    width: 258px;
+    height: 193px;
+    left: 99px;
+    top: 110px;
+  }
+  .bg-homepage .content .star-shop {
+    width: 229px;
+    height: 172px;
+    left: 275px;
+    top: 12px;
+  }
+  .bg-homepage .content .star-music {
+    width: 227px;
+    height: 179px;
+    left: -24px;
+    top: 224px;
+  }
+  .bg-homepage .content .star-expo {
+    width: 200px;
+    height: 156px;
+    left: 143px;
+    top: 298px;
+  }
+  .bg-homepage .content .star-schedule {
+    width: 234px;
+    height: 176px;
+    left: 275px;
+    top: 200px;
+  }
+  .bg-homepage .content .item .img {
+    background-size: contain;
+    background-position-x: 0;
+  }
+  .bg-homepage .content {
+    width: 100%;
+  }
+  .bg-homepage {
+    overflow-x: auto;
+    padding-top: 30%;
+  }
 }
 
 @media screen and (max-width: 430px) {
   .events.container-xxl .container-content {
     top: -80px;
+  }
+  .body-content .content {
+    margin-top: calc(50% + 120px);
+  }
+  .body-content .content p {
+    max-width: 80%;
+    text-align: center;
+  }
+  .body-content-event-past.container-xxl.body-content {
+    min-height: 286px;
   }
 }
 
@@ -1910,5 +2048,17 @@ body {
   .events.container-xxl.bg-image_expo::before,
   .container-xxl.bg-image::before {
     top: -250px;
+  }
+  .body-content .content {
+    margin-top: 50%;
+  }
+  .events.container-xxl.events-past.bg-image_expo::before{
+    top: -280px;
+  }
+  .body-content-event-past.container-xxl.body-content {
+    min-height: 480px;
+  }
+  .events.container-xxl .container-content {
+    top: -140px;
   }
 }
