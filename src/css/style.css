@@ -2026,6 +2026,49 @@ body {
     overflow-x: auto;
     padding-top: 30%;
   }
+  .bg-homepage .content .item a {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5px;
+    display: inline-block;
+  }
+  .bg-homepage .content .star-profile a {
+    top: -26px;
+    left: 50%;
+  }
+  .bg-homepage .content .item .line {
+    left: 50%;
+    width: 1px;
+  }
+  .bg-homepage .content .star-board a {
+    left: 54%;
+    top: -15px;
+  }
+  .bg-homepage .content .star-shop .line {
+    top: 28px;
+  }
+  .bg-homepage .content .star-board .line {
+    left: 54%;
+  }
+  .bg-homepage .content .star-shop a {
+    left: 50%;
+  }
+  .bg-homepage .content .star-music .line {
+    left: 37%;
+  }
+  .bg-homepage .content .star-music a {
+    top: -65px;
+  }
+  .bg-homepage .content .star-expo .line {
+    left: 40%;
+  }
+  .bg-homepage .content .star-schedule a {
+    left: 50%;
+    top: -19px;
+  }
+  .bg-homepage .content .star-expo a {
+    top: -20px;
+  }
 }
 
 @media screen and (max-width: 430px) {
