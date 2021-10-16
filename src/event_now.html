@@ -41,11 +41,19 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand img-logo" href="#">
+              <img src="image/logu.png" alt="">
+            </a>
+            <a href="" class="close"><i class="bi bi-x-lg"></i></a>
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
+                <a class="nav-link nav-home" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+
                 <a class="nav-link active" aria-current="page" href="#">STAR
                   BOARD</a>
               </li>
@@ -76,8 +84,40 @@
               <li class="nav-item">
                 <a class="nav-link">SCHEDULE</a>
               </li>
+              <li class="account nav-item dropdown d-xl-none d-lg-none">
+                <a class="nav-link dropdown-toggle" href="#"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">My account <i
+                    class="bi bi-chevron-down"></i></a>
+                <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">My account</a></li>
+                  <li><a class="dropdown-item" href="#">ALL NEWS</a></li>
+                  <li><a class="dropdown-item" href="#">Account setting</a></li>
+                  <li><a class="dropdown-item" href="#">Utilities</a></li>
+                  <li><a class="dropdown-item" href="#">FOR SALE</a></li>
+                  <li><a class="dropdown-item" href="#">Payment history</a></li>
+                </ul>
+              </li>
+              <li class="nav-item logout d-xl-none d-lg-none">
+                <a href="" class="btn-logout">Log out</a>
+              </li>
+              <li class="nav-item item-mobile d-xl-none d-lg-none">
+                <a class="nav-link">Cart</a>
+              </li>
+              <li class="nav-item item-mobile d-xl-none d-lg-none">
+                <a class="nav-link">Notification center</a>
+              </li>
+              <li class="nav-item dropdown d-xl-none d-lg-none
+                item-mobile">
+                <a class="nav-link dropdown-toggle" href="#"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Languages <i
+                    class="bi bi-chevron-down"></i></a>
+              </li>
             </ul>
-            <div class="d-flex icon-nav">
+
+            <div class="icon-nav d-md-flex d-none">
               <a href=""><i class="bi bi-bell"></i></a>
               <a href=""> <i class="bi bi-cart"></i></a>
               <a href=""> <i class="bi bi-person-circle"></i></a>
@@ -130,7 +170,7 @@
       <div class="full-content">
         <div class="infor-ticket container-xxl">
           <div class="row justify-content-start">
-            <div class="col-7 content">
+            <div class="col-md-7 content">
               <h3 class="title">SALES PERIOD</h3>
               <h4 class="text">2021. 09. 01 (wed) 14:00 (cet) - 10. 02 (sat)
                 15:00
@@ -141,7 +181,7 @@
             </div>
           </div>
           <div class="row live-stream justify-content-start">
-            <div class="col-7 content">
+            <div class="col-md-7 content">
               <h3 class="title">LIVESTREAM TICKET INFORMATION</h3>
             </div>
             <div class="table">
@@ -160,7 +200,7 @@
             </div>
           </div>
           <div class="row live-stream-text justify-content-start">
-            <div class="col-10 content">
+            <div class="col-md-10 content">
               <h3 class="title">LIVESTREAM TICKET PURCHASE GUIDE</h3>
               <ul class="list-live">
                 <li>HD Single-view is a product that consists of a single main
@@ -178,7 +218,7 @@
             </div>
           </div>
           <div class="row live-stream-text justify-content-start">
-            <div class="col-10 content">
+            <div class="col-md-10 content">
               <h3 class="title">ALL CUSTOMER TICKET PURCHASE BENEFITS</h3>
               <ul class="list-live">
                 <li>DELAY STREAMING (2 TIMES) [ELIGIBILITY]</li>
@@ -194,7 +234,7 @@
             </div>
           </div>
           <div class="row live-stream-text justify-content-start">
-            <div class="col-8 content">
+            <div class="col-md-8 content">
               <h3 class="title">LIVESTREAM TICKET AUTHENTICATION AND VIEWING
                 GUIDE</h3>
               <ul class="list-live">
@@ -212,7 +252,7 @@
             </div>
           </div>
           <div class="row live-stream-text justify-content-start">
-            <div class="col-8 content">
+            <div class="col-md-8 content">
               <h3 class="title">SYSTEM REQUIREMENTS</h3>
               <ul class="list-live">
                 <li>PC: MAC OS 10.12 + / Windows 7 +</li>
@@ -224,7 +264,7 @@
             </div>
           </div>
           <div class="row live-stream-text justify-content-start">
-            <div class="col-8 content">
+            <div class="col-md-8 content">
               <h3 class="title">IMPORTANT INFORMATION</h3>
               <ul class="list-live">
                 <li>The organizer and ticketing company are not responsible for
@@ -253,7 +293,7 @@
             </div>
           </div>
           <div class="row live-stream-text justify-content-start">
-            <div class="col-8 content">
+            <div class="col-md-8 content">
               <h3 class="title">LEGAL NOTICE</h3>
               <ul class="list-live">
                 <li>Recording or extracting this content, broadcasting or
@@ -330,7 +370,10 @@
         <a href="" class="btn-see-more">SEE MORE</a>
       </div>
     </div>
-    <div class="footer container-xxl">
+    <div class="footer footer-event-now container-xxl">
+      <div class="image-logo d-xl-none d-lg-none">
+        <img src="image/logu.png" alt="">
+      </div>
       <div class="row">
         <div class="col item-footer">ABOUT US</div>
         <div class="col item-footer">PRESS CONTACT</div>
@@ -340,7 +383,12 @@
         <div class="col item-footer">PRIVATCY POLICY</div>
         <div class="col item-footer">SERCURITY</div>
       </div>
-      <div class="image-logo">
+      <div class="icon-social d-xl-none d-lg-none">
+        <a href=""> <i class="bi bi-youtube"></i></a>
+        <a href=""> <i class="bi bi-instagram"></i></a>
+        <a href=""> <i class="bi bi-twitter"></i></a>
+      </div>
+      <div class="image-logo d-none d-lg-block d-md-block d-xl-block">
         <img src="image/logu.png" alt="">
         <div class="icon-social">
           <a href=""> <i class="bi bi-youtube"></i></a>

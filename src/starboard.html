@@ -26,6 +26,8 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
     <link ref="stylesheet" href="css/expo.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -83,8 +85,40 @@
               <li class="nav-item">
                 <a class="nav-link">SCHEDULE</a>
               </li>
+              <li class="account nav-item dropdown d-xl-none d-lg-none">
+                <a class="nav-link dropdown-toggle" href="#"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">My account <i
+                    class="bi bi-chevron-down"></i></a>
+                <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">My account</a></li>
+                  <li><a class="dropdown-item" href="#">ALL NEWS</a></li>
+                  <li><a class="dropdown-item" href="#">Account setting</a></li>
+                  <li><a class="dropdown-item" href="#">Utilities</a></li>
+                  <li><a class="dropdown-item" href="#">FOR SALE</a></li>
+                  <li><a class="dropdown-item" href="#">Payment history</a></li>
+                </ul>
+              </li>
+              <li class="nav-item logout d-xl-none d-lg-none">
+                <a href="" class="btn-logout">Log out</a>
+              </li>
+              <li class="nav-item item-mobile d-xl-none d-lg-none">
+                <a class="nav-link">Cart</a>
+              </li>
+              <li class="nav-item item-mobile d-xl-none d-lg-none">
+                <a class="nav-link">Notification center</a>
+              </li>
+              <li class="nav-item dropdown d-xl-none d-lg-none
+                item-mobile">
+                <a class="nav-link dropdown-toggle" href="#"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Languages <i
+                    class="bi bi-chevron-down"></i></a>
+              </li>
             </ul>
-            <div class="d-flex icon-nav">
+
+            <div class="icon-nav d-md-flex d-none">
               <a href=""><i class="bi bi-bell"></i></a>
               <a href=""> <i class="bi bi-cart"></i></a>
               <a href=""> <i class="bi bi-person-circle"></i></a>
@@ -102,30 +136,30 @@
             <h3 class="name">SERAPHINE</h3>
             <p class="desc d-md-block d-none">Star board information</p>
           </div>
-          <div class="box-info ">
+          <div class="box-info">
             <span class="label">Members</span>
             <span class="label-number">1.098M</span>
           </div>
-          <div class="box-info d-md-block d-none ">
+          <div class="box-info d-md-block d-none">
             <span class="label">Videos</span>
             <span class="label-number">390</span>
           </div>
-          <div class="box-info d-md-block d-none ">
+          <div class="box-info d-md-block d-none">
             <span class="label">Viewers</span>
             <span class="label-number">95.2M</span>
           </div>
-          <div class="box-info d-md-block d-none ">
+          <div class="box-info d-md-block d-none">
             <span class="label">Likes</span>
             <span class="label-number">12.76B</span>
           </div>
-          <div class="box-info d-md-block d-none ">
+          <div class="box-info d-md-block d-none">
             <span class="label">Comments</span>
             <span class="label-number">23.5M</span>
           </div>
         </div>
         <div class="col-md-9 box-right">
           <div class="row d-md-flex d-none">
-            <div class="col live ">
+            <div class="col live">
               <img src="image/live_video.png" alt="" class="item">
             </div>
             <div class="col box-chat">
@@ -164,9 +198,11 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-between action">
-            <a href="" class="addvideo col-auto ">All videos</a>
-            <a href="" class="btn-information col-auto me-auto d-md-none d-lg-block">Infomation</a>
+          <div class="row block-action justify-content-between action">
+            <a href="" class="addvideo col-auto">All videos</a>
+
+            <a class="btn btn-information col-auto me-auto d-md-none
+              d-lg-block" data-bs-toggle="collapse" data-bs-target="#demo">Infomation</a>
             <a href="" class="option col-auto" data-bs-toggle="dropdown"
               aria-expanded="false"></a>
             <ul class="dropdown-menu dropdown-menu-options">
@@ -187,6 +223,29 @@
                 Apply</a>
             </ul>
           </div>
+          <div class="collapse d-lg-none" id="demo">
+            <div class="box-info">
+              <span class="label">Members</span>
+              <span class="label-number">1.098M</span>
+            </div>
+            <div class="box-info">
+              <span class="label">Videos</span>
+              <span class="label-number">390</span>
+            </div>
+            <div class="box-info">
+              <span class="label">Viewers</span>
+              <span class="label-number">95.2M</span>
+            </div>
+            <div class="box-info">
+              <span class="label">Likes</span>
+              <span class="label-number">12.76B</span>
+            </div>
+            <div class="box-info">
+              <span class="label">Comments</span>
+              <span class="label-number">23.5M</span>
+            </div>
+          </div>
+
           <div class="row video-content">
             <div class="col-md-4">
               <div class="item-video">

@@ -40,11 +40,19 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand img-logo" href="#">
+              <img src="image/logu.png" alt="">
+            </a>
+            <a href="" class="close"><i class="bi bi-x-lg"></i></a>
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
+                <a class="nav-link nav-home" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+
                 <a class="nav-link active" aria-current="page" href="#">STAR
                   BOARD</a>
               </li>
@@ -75,8 +83,40 @@
               <li class="nav-item">
                 <a class="nav-link">SCHEDULE</a>
               </li>
+              <li class="account nav-item dropdown d-none d-sm-block d-md-none">
+                <a class="nav-link dropdown-toggle" href="#"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">My account <i
+                    class="bi bi-chevron-down"></i></a>
+                <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">My account</a></li>
+                  <li><a class="dropdown-item" href="#">ALL NEWS</a></li>
+                  <li><a class="dropdown-item" href="#">Account setting</a></li>
+                  <li><a class="dropdown-item" href="#">Utilities</a></li>
+                  <li><a class="dropdown-item" href="#">FOR SALE</a></li>
+                  <li><a class="dropdown-item" href="#">Payment history</a></li>
+                </ul>
+              </li>
+              <li class="nav-item logout d-none d-sm-block d-md-none">
+                <a href="" class="btn-logout">Log out</a>
+              </li>
+              <li class="nav-item item-mobile d-none d-sm-block d-md-none">
+                <a class="nav-link">Cart</a>
+              </li>
+              <li class="nav-item item-mobile d-none d-sm-block d-md-none">
+                <a class="nav-link">Notification center</a>
+              </li>
+              <li class="nav-item dropdown d-none d-sm-block d-md-none
+                item-mobile">
+                <a class="nav-link dropdown-toggle" href="#"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Languages <i
+                    class="bi bi-chevron-down"></i></a>
+              </li>
             </ul>
-            <div class="d-flex icon-nav">
+
+            <div class="icon-nav d-md-flex d-none">
               <a href=""><i class="bi bi-bell"></i></a>
               <a href=""> <i class="bi bi-cart"></i></a>
               <a href=""> <i class="bi bi-person-circle"></i></a>
